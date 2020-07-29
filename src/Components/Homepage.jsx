@@ -21,14 +21,16 @@ class Homepage extends Component
         if (this.state.loading)
         {
             return (
-                <div className='main_container'>
+                <div className='MainContainer'>
                     <Loading />
                 </div>
             );
         }
         return (
-            <div className='main_container'>
-                <h1>The Big Listen!</h1>
+            <div className='MainContainer'>
+                <div className='Homepage'>
+                    <h1>Homepage</h1>
+                </div>
             </div>
         );
     }

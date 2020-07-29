@@ -1,4 +1,8 @@
-.main_container {
+.MainContainer {
     padding: 100px 10%;
     min-height: 100vh;
+}
+
+.Homepage {
+    background-color: grey;
 }

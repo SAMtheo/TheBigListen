@@ -3,6 +3,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Grid } from '@material-ui/core';
 import Homepage from './Components/Homepage';
+import Header from './Components/Header';
 import './App.css';
 
 const theme = createMuiTheme({
@@ -26,6 +27,9 @@ class App extends Component
           <MuiThemeProvider theme={theme}>
             <div className='Page'>
               <Grid container spacing={0}>
+                <Grid item xs={12}>
+                  <Header />
+                </Grid>
                 <Grid item xs={12}>
                   <Route exact path="/" component={Homepage}/>
                 </Grid>
