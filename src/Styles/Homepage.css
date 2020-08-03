@@ -1,8 +1,8 @@
 .MainContainer {
-    padding: 100px 10%;
+    padding: 100px 10% 0 10%;
     min-height: 100vh;
 }
 
 .Homepage {
-    background-color: grey;
+    height: 100vh;
 }

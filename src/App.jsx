@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Grid } from '@material-ui/core';
 import Homepage from './Components/Homepage';
 import Header from './Components/Header';
+import Participants from './Components/Participants/Participants';
+import ReviewCollection from './Components/Reviews/ReviewCollection';
 import './App.css';
 
 const theme = createMuiTheme({
@@ -32,6 +34,8 @@ class App extends Component
                 </Grid>
                 <Grid item xs={12}>
                   <Route exact path="/" component={Homepage}/>
+                  <Route exact path="/Participants" component={Participants}/>
+                  <Route exact path="/Reviews" component={ReviewCollection}/>
                 </Grid>
               </Grid>
             </div>
